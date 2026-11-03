@@ -457,3 +457,30 @@ ul.desc li { margin-bottom: 0.15rem; }
 .project h3 { font-size: 1.4rem; margin: .35rem 0; line-height: 1.25; }
 .project p { margin-bottom: .55rem; }
 .project a { font-family: var(--sans); font-size: .9rem; }
+
+/* Research portfolio */
+.portfolio { max-width: 1160px; margin: auto; padding: 0 clamp(1.25rem,4vw,3.5rem) 2rem; }
+.hero { display: grid; grid-template-columns: minmax(0,1fr) minmax(180px,240px); gap: clamp(2rem,6vw,6rem); align-items: center; padding: clamp(2.4rem,6vw,5rem) 0 2rem; }
+.eyebrow,.study small,.hero-role,.hero-links,.collab,.hero figcaption { font-family: var(--sans); }
+.eyebrow,.study small { color: var(--rust); font-size: .75rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.hero h1 { font-size: clamp(2.4rem,5.2vw,4.5rem); line-height: 1.02; letter-spacing: -.045em; margin: .7rem 0; }
+.hero-role,.hero figcaption { color: var(--ink-soft); font-size: .85rem; }
+.hero-bio { max-width: 48ch; font-size: clamp(1.13rem,2vw,1.37rem); line-height: 1.48; margin: 1.25rem 0; }
+.hero-links { display:flex; flex-wrap:wrap; gap:.55rem 1.15rem; list-style:none; font-size:.85rem; }
+.hero-links svg { margin-right:.3rem; }
+.hero .portrait { margin:0; border-radius: .65rem; overflow:hidden; padding:0; }
+.hero figcaption { font-size:.72rem; padding-top:.5rem; }
+.collab { border-block:1px solid var(--rule); padding:1rem 0; display:flex; gap:.4rem 1rem; flex-wrap:wrap; align-items:baseline; font-size:.88rem; margin-bottom:2.4rem; }
+.collab strong { color:var(--rust); }
+.collab a { margin-left:auto; }
+.studies { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.study { display:flex; flex-direction:column; padding:1.15rem; border:1px solid var(--rule); border-radius:.65rem; background:var(--paper-2); }
+.study-art { width:100%; height:64px; color:var(--navy); margin-bottom:1.3rem; }
+.study:nth-child(2) .study-art { color:var(--rust); }
+.study h3 { font-size:1.45rem; line-height:1.16; margin:.55rem 0; }
+.study p { font-size:1rem; line-height:1.5; margin-bottom:1rem; }
+.study a { margin-top:auto; align-self:flex-start; font:600 .83rem var(--sans); }
+.portfolio .more { margin-top:1rem; }
+a:focus-visible,button:focus-visible { outline:2px solid var(--rust); outline-offset:3px; }
+@media(max-width:760px) { .studies {grid-template-columns:1fr;} .study-art {width:160px;height:34px;margin-bottom:.75rem;} }
+@media(max-width:600px) { .hero {grid-template-columns:1fr;gap:1rem;} .hero figure {grid-row:1;display:flex;align-items:center;gap:.75rem;} .hero .portrait {width:85px; flex:none;} .hero figcaption {max-width:16ch;} .collab {display:grid;} .collab a {margin-left:0;} }
