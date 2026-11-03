@@ -136,7 +136,7 @@ header.topbar {
     position: relative;
     margin-bottom: 1.2rem;
 }
-.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; filter: saturate(0.95); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center; object-view-box: inset(31% 16% 38% 36%); display: block; filter: saturate(0.95); }
 .portrait .initials {
     position: absolute; inset: 6px;
     display: none;
