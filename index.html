@@ -29,10 +29,8 @@
         <a href="index.html" class="wordmark">Purushoth Velayuthan</a>
         <ul class="nav">
             <li><a href="#about" class="current">About</a></li>
-            <li><a href="#news">News</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#teaching">Teaching</a></li>
             
                         <li><a href="assets/cv.pdf">CV</a></li>
             <li><button class="icon-btn theme-toggle" onclick="toggleTheme()" title="Light / dark" aria-label="Toggle dark mode"><svg class="icon i-moon"><use href="#i-moon"/></svg><svg class="icon i-sun"><use href="#i-sun"/></svg></button></li>
@@ -68,202 +66,31 @@
 
     <main>
 
-        <!-- ================= ABOUT ================= -->
         <section class="block about" id="about">
             <h2>About</h2>
-            <p class="lede">I study what speech models learn about the words we say and the voices that say them. I’m especially interested in how well those models work for languages such as Sinhala.</p>
-            <p>I’m a master’s student in computer science at the University of Nevada, Reno, where I work with Dr. Alireza Tavakkoli in the Human-Machine Perception Lab. I expect to graduate in May 2027. With Tharindu Ranasinghe, I developed SinAEB, a benchmark that lets us compare how speech encoders represent speakers and spoken content in Sinhala.</p>
-            <p>At Idaho National Laboratory, I worked on a related question for radio signals. When noise obscures a waveform, can a model still recognize familiar patterns and flag an unfamiliar transmission? I trained models across INL’s computing clusters to study how signal representations change with noise. I’m interested in how speech tokenizers and neural codecs can preserve both words and speaker characteristics in low-resource speech-to-speech translation.</p>
-            <!-- Optional. Edit or delete this <div>. -->
-            <div class="notice">I’m looking for collaborators in speech and audio research. If you’re working on audio representations, speech tokenization, or low-resource languages, I’d love to <a href="mailto:vpurushoth97@gmail.com">hear from you</a>.</div>
+            <p class="opening">What can a model hear in a voice?</p>
+            <p>I’m a master’s student at the University of Nevada, Reno, working with Dr. Alireza Tavakkoli in the Human-Machine Perception Lab. I study how speech models capture what someone says and who is speaking, especially in languages with limited training data.</p>
+            <p>I’m interested in speech-to-speech translation. When a sentence is translated into another language, how much of the original speaker’s voice can we preserve?</p>
+            <div class="notice">I’m looking for collaborators in speech and audio research. If you’re working on speech representations, tokenization, or low-resource languages, <a href="mailto:vpurushoth97@gmail.com">let’s get in touch</a>.</div>
         </section>
-
-        <!-- ================= RESEARCH ================= -->
         <section class="block" id="research">
-            <h2>Research interests</h2>
-            <ul class="interests">
-                <li><div><strong>Audio representation learning.</strong> <span>What pretrained audio and speech models encode, layer by layer, especially for low-resource languages such as Sinhala.</span></div></li>
-                <li><div><strong>Tokenization and codecs.</strong> <span>Discrete tokens for speech and RF signals that stay stable under noise, and neural codecs for low-resource speech-to-speech translation.</span></div></li>
-                <li><div><strong>LLMs and VLMs.</strong> <span>Multilingual and multimodal language models, and how vision-language models behave under real-world noise.</span></div></li>
-                <li><div><strong>Foundation models.</strong> <span>Large pretrained models for audio, vision and signals, and how to adapt them to new domains.</span></div></li>
-            </ul>
-        </section>
-
-        <!-- ================= NEWS ================= -->
-        <!-- Newest first. Tag classes: accepted, review, talk -->
-        <section class="block" id="news">
-            <h2>News</h2>
-            <ul class="news">
-                <li><time>2026</time><div><a href="https://aclanthology.org/2026.emnlp-main.1209.pdf">Large-scale Multilingual News Image Captioning with LLMs</a> accepted at <strong>EMNLP 2026</strong>. <span class="tag accepted">Accepted</span></div></li>
-                <li><time>2026</time><div>Sinhala Audio Embedding Benchmark and Evaluation submitted to <strong>NAACL 2027</strong>. <span class="tag review">Under review</span></div></li>
-                <li><time>Jun 2026</time><div>Joined <strong>Idaho National Laboratory</strong> as an AI/ML research intern to study open-set recognition of RF waveforms.</div></li>
-                <li><time>Spring 2026</time><div>Lead instructor for GRAD 778, Elements of Research Computing (Large Language Models), at UNR. <span class="tag talk">Teaching</span></div></li>
-                <li><time>2026</time><div><a href="https://arxiv.org/abs/2509.12492">Evaluating Robustness of Vision-Language Models under Noisy Conditions</a> accepted at <strong>IEEE CCWC 2026</strong>. <span class="tag accepted">Accepted</span></div></li>
-                <li><time>2025</time><div>Awarded the Graduate Dean's Merit Scholarship at UNR.</div></li>
-                <li><time>Jan 2025</time><div>Joined the Human-Machine Perception Lab at UNR as a graduate research assistant.</div></li>
-            </ul>
-        </section>
-
-        <!-- ================= PUBLICATIONS ================= -->
-        <section class="block" id="publications">
-            <h2>Selected publications</h2>
-            <ul class="pubs">
-                <li class="pub" data-tags="vl,conference">
-                    <div class="venue">EMNLP<small>2026</small></div>
-                    <div>
-                        <div class="pub-title">Large-scale Multilingual News Image Captioning with LLMs</div>
-                        <div class="pub-authors">Yuji Chen, <span class="me">Purushoth Velayuthan</span>, Alistair Plum, Hansi Hettiarachchi, Saroj Basnet, Menan Velayuthan, Marcos Zampieri, Tharindu Ranasinghe</div>
-                        <div class="pub-meta">Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026. CORE A*</div>
-                        <div class="pub-links"><a href="https://aclanthology.org/2026.emnlp-main.1209.pdf" target="_blank" rel="noopener">PDF</a></div>
-                    </div>
-                </li>
-                <li class="pub" data-tags="audio,under-review">
-                    <div class="venue">NAACL<small>2027 · review</small></div>
-                    <div>
-                        <div class="pub-title">Sinhala Audio Embedding Benchmark and Evaluation</div>
-                        <div class="pub-authors"><span class="me">Purushoth Velayuthan</span>, Tharindu Ranasinghe</div>
-                        <div class="pub-meta">Under review at NAACL 2027. CORE A</div>
-                    </div>
-                </li>
-                <li class="pub" data-tags="vl,conference">
-                    <div class="venue">CCWC<small>2026</small></div>
-                    <div>
-                        <div class="pub-title">Evaluating Robustness of Vision-Language Models under Noisy Conditions</div>
-                        <div class="pub-authors"><span class="me">Purushoth Velayuthan</span>, Alireza Tavakkoli</div>
-                        <div class="pub-meta">IEEE 16th Annual Computing and Communication Workshop and Conference (CCWC), 2026</div>
-                        <div class="pub-links"><a href="https://arxiv.org/abs/2509.12492" target="_blank" rel="noopener">arXiv</a></div>
-                    </div>
-                </li>
-                <li class="pub" data-tags="vision,preprint">
-                    <div class="venue">arXiv<small>2025</small></div>
-                    <div>
-                        <div class="pub-title">GADS: A Super Lightweight Model for Head Pose Estimation</div>
-                        <div class="pub-authors">Menan Velayuthan, Asiri Gawesha, <span class="me">Purushoth Velayuthan</span>, Pradeepa Samarasinghe, Dharshana Kasthurirathna</div>
-                        <div class="pub-meta">arXiv preprint, 2025</div>
-                        <div class="pub-links"><a href="https://arxiv.org/abs/2504.15751" target="_blank" rel="noopener">arXiv</a></div>
-                    </div>
-                </li>
-            </ul>
+            <h2>Selected research</h2>
+            <article class="project"><small>Speech · Sinhala</small>
+                <h3>What do speech models learn about Sinhala?</h3>
+                <p>With Tharindu Ranasinghe, I developed SinAEB to compare speech models on tasks such as finding a matching transcript and grouping recordings by speaker. A model that does well at one can struggle with the other.</p>
+                <a href="publications.html#sinaeb">SinAEB manuscript · Under review</a>
+            </article>
+            <article class="project"><small>Radio signals · Idaho National Laboratory</small>
+                <h3>Recognizing unfamiliar signals in noise</h3>
+                <p>During my internship at INL, I studied whether a model could recognize the same radio waveform as noise increased. The longer-term goal is to flag unfamiliar transmissions, even when the signal is weak.</p>
+                <a href="https://drive.google.com/file/d/1vLC2e4KZHPEGebHOYFsHe8tTG7z03xKv/view?usp=sharing">View the research poster</a>
+            </article>
+            <article class="project"><small>Vision and language · EMNLP 2026</small>
+                <h3>Captioning news images across languages</h3>
+                <p>News photographs often need context beyond what is visible in the frame. My collaborators and I studied how large language models can help generate multilingual captions for these images.</p>
+                <a href="https://aclanthology.org/2026.emnlp-main.1209.pdf">Read the paper</a>
+            </article>
             <p class="more"><a href="publications.html">All publications and posters &rarr;</a></p>
-        </section>
-
-        <!-- ================= EXPERIENCE ================= -->
-        <section class="block" id="experience">
-            <h2>Research experience</h2>
-            <ul class="entries">
-                <li class="entry">
-                    <span class="what">AI/ML Research Intern</span><span class="when">Jun 2026 – Aug 2026</span>
-                    <span class="where">Idaho National Laboratory, Idaho Falls, Idaho</span>
-                    <ul class="desc"><li>Investigated how sequences of RF signal tokens can help distinguish known waveforms from unfamiliar ones.</li><li>Worked on a framework that learns temporal patterns across signal-to-noise ratios (SNRs), with the goal of producing stable tokens and detecting unusual token sequences at low SNR.</li><li>Trained models on INL's HPC infrastructure across multiple clusters with multi-GPU nodes.</li></ul>
-                </li>
-                <li class="entry">
-                    <span class="what">Graduate Research Assistant</span><span class="when">Jan 2025 – Present</span>
-                    <span class="where">Human-Machine Perception Lab, University of Nevada, Reno</span>
-                    <ul class="desc"><li>Implemented audio AI agents for UNR's nursing school, including automated EHR documentation and nursing evaluations.</li><li>Studied text–image retrieval on the CBIS-DDSM breast cancer benchmark. Hyperbolic embeddings outperformed the Euclidean baselines, with Recall@1 of 69.72 and Recall@10 of 78.47.</li></ul>
-                </li>
-                <li class="entry">
-                    <span class="what">Research Assistant</span><span class="when">Jul 2024 – Dec 2024</span>
-                    <span class="where">Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka</span>
-                    <ul class="desc"><li>Designed and evaluated OCR benchmarking experiments for Sinhala and Tamil, analyzing accuracy, robustness and failure cases.</li><li>Built an OMR-based auto-grading system for handwritten MCQ answer sheets, used in production across the department since 2024.</li></ul>
-                </li>
-                <li class="entry">
-                    <span class="what">Research Assistant</span><span class="when">Nov 2022 – Mar 2023</span>
-                    <span class="where">UAVR Lab, University of Colombo School of Computing, Sri Lanka</span>
-                    <ul class="desc"><li>Curated a multispectral UAV dataset for marine debris detection and environmental monitoring.</li><li>Implemented multimodal fusion of multispectral images and mmWave captures.</li><li>Improved Faster R-CNN marine debris detection accuracy by 6.7% with 65% less labeled data using self-supervised pretraining.</li></ul>
-                </li>
-                <li class="entry">
-                    <span class="what">Undergraduate Researcher</span><span class="when">Aug 2021 – May 2022</span>
-                    <span class="where">Indian Space Research Organisation (ISRO), Thiruvananthapuram, India</span>
-                    <ul class="desc"><li>Developed a real-time facial emotion recognition system for satellite ships that handles pose variation, occlusion and difficult lighting.</li><li>Improved the state-of-the-art model's performance by 7.9% under controlled conditions, with better handling of planar 2D rotations.</li></ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="block" id="industry">
-            <h2>Industry experience</h2>
-            <ul class="entries">
-                <li class="entry">
-                    <span class="what">Artificial Intelligence Engineer</span><span class="when">Mar 2023 – May 2024</span>
-                    <span class="where">Pekoe.ai, Singapore (hybrid)</span>
-                    <ul class="desc"><li>Improved image retrieval by 14% over a vision-only baseline by enhancing VLM vision encoders.</li><li>Fine-tuned LLMs for attribute-controlled image-difference captioning.</li><li>Built OCR and object-tracking pipelines for real-time product recognition on industrial production lines, with calibrated industrial camera feeds.</li><li>Developed Blendmix, an augmentation technique for self-supervised training, and built speech-to-text and text-to-speech pipelines.</li></ul>
-                </li>
-                <li class="entry">
-                    <span class="what">AI Research Intern</span><span class="when">Apr 2021 – Jul 2021</span>
-                    <span class="where">LIRNEasia, Colombo, Sri Lanka</span>
-                    <ul class="desc"><li>Built a reference dataset of land cover and land use classes for Sri Lanka.</li></ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- ================= TEACHING ================= -->
-        <section class="block" id="teaching">
-            <h2>Teaching and mentoring</h2>
-            <ul class="entries">
-                <li class="entry">
-                    <span class="what">Lead Instructor, GRAD 778: Elements of Research Computing (Large Language Models)</span><span class="when">Spring 2026</span>
-                    <span class="where">University of Nevada, Reno</span>
-                </li>
-                <li class="entry">
-                    <span class="what">Teaching Assistant, CS 687: Fundamentals of Deep Learning</span><span class="when">Spring 2026</span>
-                    <span class="where">University of Nevada, Reno</span>
-                </li>
-                <li class="entry">
-                    <span class="what">Teaching Assistant, CS 657: Database Management Systems</span><span class="when">Fall 2025</span>
-                    <span class="where">University of Nevada, Reno</span>
-                </li>
-                <li class="entry">
-                    <span class="what">Mentor to eight AI engineering interns</span><span class="when">2023 – 2024</span>
-                    <span class="where">Pekoe.ai, interns from the University of Moratuwa</span>
-                </li>
-            </ul>
-        </section>
-
-        <!-- ================= EDUCATION ================= -->
-        <section class="block" id="education">
-            <h2>Education</h2>
-            <ul class="entries">
-                <li class="entry">
-                    <span class="what">M.S. in Computer Science</span><span class="when">Expected May 2027</span>
-                    <span class="where">University of Nevada, Reno</span>
-                    <ul class="desc"><li>GPA 4.0 / 4.0</li><li>Courses: Convex Optimization, Deep Learning, Gen AI: From Images to Video, Computer Graphics, Cloud Computing</li></ul>
-                </li>
-                <li class="entry">
-                    <span class="what">B.Tech. in Electrical and Electronics Engineering, minor in Computer Applications</span><span class="when">Aug 2018 – May 2022</span>
-                    <span class="where">National Institute of Technology Tiruchirappalli, India</span>
-                    <ul class="desc"><li>First Class</li></ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- ================= HONORS ================= -->
-        <section class="block" id="honors">
-            <h2>Awards</h2>
-            <ul class="entries">
-                <li class="entry">
-                    <span class="what">Graduate Dean's Merit Scholarship</span><span class="when">2025 / 2026</span>
-                    <span class="where">University of Nevada, Reno. For an outstanding academic record and promise of productive scholarship.</span>
-                </li>
-                <li class="entry">
-                    <span class="what">Rajiv Gandhi Scholarship</span><span class="when">2018 / 2019</span>
-                    <span class="where">For the best mathematics results in the G.C.E. Advanced Level examination</span>
-                </li>
-                <li class="entry">
-                    <span class="what">Sri Lankan Mathematics Olympiad</span><span class="when">2012</span>
-                    <span class="where">Selected for the district-level competition</span>
-                </li>
-            </ul>
-        </section>
-
-        <!-- ================= SKILLS ================= -->
-        <section class="block" id="skills">
-            <h2>Technical skills</h2>
-            <dl class="skills">
-                <dt>Languages</dt><dd>Python, C, C++, MATLAB</dd>
-                <dt>ML frameworks</dt><dd>PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, Hugging Face</dd>
-                <dt>LLM tooling</dt><dd>LlamaIndex, LangChain, LangGraph, Ollama</dd>
-                <dt>HPC</dt><dd>Slurm, Linux, multi-GPU training, HPC clusters</dd>
-                <dt>Cloud and tools</dt><dd>AWS (SageMaker, Lambda), Git, LaTeX</dd>
-            </dl>
         </section>
     </main>
 </div>

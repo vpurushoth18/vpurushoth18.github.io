@@ -449,3 +449,11 @@ ul.desc li { margin-bottom: 0.15rem; }
 .skills dt { font-family: var(--sans); font-size: 0.82rem; font-weight: 600; color: var(--ink-faint); padding-top: 0.15rem; }
 .skills dd { color: var(--ink-soft); }
 @media (max-width: 640px) { .skills { grid-template-columns: 1fr; gap: 0; } .skills dd { margin-bottom: 0.5rem; } }
+
+.opening { font-size: clamp(1.85rem, 4vw, 2.8rem); line-height: 1.12; font-weight: 600; letter-spacing: -.025em; }
+.project { padding: 1.2rem 0; border-bottom: 1px solid var(--rule); }
+.project:first-of-type { padding-top: 0; }
+.project small { font-family: var(--sans); color: var(--ink-soft); }
+.project h3 { font-size: 1.4rem; margin: .35rem 0; line-height: 1.25; }
+.project p { margin-bottom: .55rem; }
+.project a { font-family: var(--sans); font-size: .9rem; }
