@@ -1,11 +1,11 @@
 body{font-family:"Times New Roman",Times,serif;color:#000;background:#fff}
 a:hover,a:focus-visible{background:#aaf}li{margin-block:10px}
 .intro{display:flow-root}.intro p:first-of-type{margin-top:0}
-.photo{float:left;width:150px;height:188px;margin:0 20px 8px 35px;object-fit:cover;object-view-box:inset(42% 10% 22% 50%)}
+.photo{float:left;width:150px;height:auto;margin:0 20px 8px 35px}
 .columns{display:grid;grid-template-columns:230px minmax(0,1fr);width:100%;gap:1rem;margin-top:12px}
 .columns nav ul{margin-top:0}.columns h4{margin:0}.details{max-width:1000px}.details dt{font-weight:bold}.details dd{margin-bottom:.75em}
 @media(min-width:800px){p{margin-left:20px;text-indent:30px;max-width:1000px}ul,ol{max-width:1000px}}
-@media(max-width:580px){.columns{grid-template-columns:1fr}.photo{width:100px;height:125px;margin-left:0;margin-right:12px}}
+@media(max-width:580px){.columns{grid-template-columns:1fr}.photo{width:100px;height:auto;margin-left:0;margin-right:12px}}
 
 .collaboration{clear:both;background:#f6f7f8;border:1px solid #e6e8eb;padding:12px 16px;text-indent:0}
 .news-scroll{height:390px;overflow-y:scroll;padding-right:12px;scrollbar-width:thin;scrollbar-color:#bbc1c8 #f5f5f5}
