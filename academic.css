@@ -22,9 +22,9 @@ a:hover,a:focus-visible{background:#aaf}li{margin-block:10px}
 
 .photo-page{max-width:1050px;margin:0 auto;padding:0 12px}
 .gallery-intro,.gallery-back{margin-left:0;text-indent:0;max-width:none}
-.photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;margin:22px 0 32px}
+.photo-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,210px));gap:20px;margin:22px 0 32px}
 .photo-gallery figure{margin:0;min-width:0}
-.photo-gallery .gallery-featured{grid-column:1/-1}
-.photo-gallery img{display:block;width:100%;height:auto}
+.photo-gallery .gallery-featured{grid-column:auto}
+.photo-gallery img{display:block;width:100%;height:160px;object-fit:cover}
 .photo-gallery figcaption{margin-top:7px;color:#444;font-size:.95em}
-@media(max-width:580px){.photo-gallery{grid-template-columns:1fr;gap:22px}}
+@media(max-width:580px){.photo-gallery{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:16px}.photo-gallery img{height:130px}}
