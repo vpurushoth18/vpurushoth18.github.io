@@ -7,8 +7,8 @@
   <meta name="description" content="Purushoth Velayuthan — speech, audio, and signal research, on a little retro desktop.">
   <title>Purushoth OS — Purushoth Velayuthan</title>
   <link rel="icon" href="assets/img/favicon.svg">
-  <link rel="stylesheet" href="pixel-preview.css?v=retro-desktop-2">
-  <script defer src="pixel-preview.js?v=retro-desktop-2"></script>
+  <link rel="stylesheet" href="pixel-preview.css?v=retro-disc-1">
+  <script defer src="pixel-preview.js?v=retro-disc-1"></script>
 </head>
 <body>
   <a class="skip" href="#desktop">Skip to desktop</a>
@@ -27,6 +27,7 @@
       <button class="desk-icon" data-open="papers" type="button"><span class="icon-art folder-icon" aria-hidden="true"><span>✦</span></span><span class="icon-caption">Papers</span></button>
       <button class="desk-icon" data-open="experience" type="button"><span class="icon-art disk-icon" aria-hidden="true"><span>INL<br>◆</span></span><span class="icon-caption">Experience</span></button>
       <button class="desk-icon" data-open="beyond" type="button"><span class="icon-art racket-icon" aria-hidden="true"><span>◉</span></span><span class="icon-caption">Beyond Work</span></button>
+      <button class="desk-icon" data-open="player" type="button"><span class="icon-art cd-icon" aria-hidden="true"><span class="cd-disc"></span></span><span class="icon-caption">Disc Player</span></button>
       <button class="desk-icon" data-open="contact" type="button"><span class="icon-art mail-icon" aria-hidden="true"><span>✉</span></span><span class="icon-caption">Contact</span></button>
       <a class="desk-icon" href="assets/cv.pdf"><span class="icon-art pdf-icon" aria-hidden="true"><span>PDF</span></span><span class="icon-caption">CV.pdf</span></a>
     </section>
@@ -76,6 +77,16 @@
       <article class="window hidden" id="win-beyond" data-window="beyond" aria-labelledby="title-beyond" style="--x:345px;--y:125px;--w:480px;--h:405px;--z:1">
         <header class="titlebar"><button class="window-close" aria-label="Close Beyond Work" type="button">×</button><span class="title-rule"></span><h2 id="title-beyond">Beyond Work</h2><span class="title-rule"></span><button class="window-zoom" aria-label="Maximize Beyond Work" type="button">□</button></header>
         <div class="window-body beyond-body"><div class="pixel-court" aria-hidden="true"><span class="net"></span><span class="court-ball"></span><span class="paddle-head"></span><span class="paddle-handle"></span></div><h3>See you on the court?</h3><p>I played tennis for my high school team and now play a lot of pickleball. I’m up for tennis, badminton, table tennis, or any racket game.</p><p>If you’re interested, <a href="mailto:vpurushoth97@gmail.com?subject=See%20you%20on%20the%20court">let’s play ↗</a></p></div>
+      </article>
+      <article class="window hidden" id="win-player" data-window="player" aria-labelledby="title-player" style="--x:370px;--y:155px;--w:410px;--h:430px;--z:1">
+        <header class="titlebar"><button class="window-close" aria-label="Close Disc Player" type="button">×</button><span class="title-rule"></span><h2 id="title-player">Disc Player</h2><span class="title-rule"></span><button class="window-zoom" aria-label="Maximize Disc Player" type="button">□</button></header>
+        <div class="window-body player-body">
+          <div class="player-face"><div class="player-display"><span>◉ PURUSHOTH AUDIO SYSTEM</span><strong id="player-title">Reno Dusk</strong><small id="player-status" role="status">READY · SELECT A TRACK</small><span class="player-meter"><i id="player-progress"></i></span></div><div class="disc-platter"><div class="disc" id="player-disc"><span class="disc-label">PV<br>01</span></div></div></div>
+          <div class="player-controls"><button type="button" id="player-prev" aria-label="Previous track">◀◀</button><button type="button" id="player-play" aria-label="Play">▶ PLAY</button><button type="button" id="player-next" aria-label="Next track">▶▶</button><button type="button" id="player-stop" aria-label="Stop">■</button></div>
+          <div class="player-volume"><label for="player-volume">VOLUME</label><input id="player-volume" type="range" min="0" max="100" value="35" aria-label="Player volume"><span>♪</span></div>
+          <div class="track-list" role="group" aria-label="Choose a track"><button type="button" class="selected" data-track="0"><span>01</span> Reno Dusk <small>CHIP LOOP</small></button><button type="button" data-track="1"><span>02</span> Signal Drift <small>CHIP LOOP</small></button><button type="button" data-track="2"><span>03</span> Court Break <small>CHIP LOOP</small></button></div>
+          <p class="player-note">Original little synthesizer loops. Sound starts only when you press play.</p>
+        </div>
       </article>
       <article class="window hidden" id="win-contact" data-window="contact" aria-labelledby="title-contact" style="--x:340px;--y:130px;--w:480px;--h:370px;--z:1">
         <header class="titlebar"><button class="window-close" aria-label="Close Contact" type="button">×</button><span class="title-rule"></span><h2 id="title-contact">Contact</h2><span class="title-rule"></span><button class="window-zoom" aria-label="Maximize Contact" type="button">□</button></header>
